@@ -16,6 +16,9 @@
 		D13B806023E151E600819EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13B805E23E151E600819EE1 /* LaunchScreen.storyboard */; };
 		D13B806B23E151E700819EE1 /* HarminderMobileDevTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B806A23E151E700819EE1 /* HarminderMobileDevTestTests.swift */; };
 		D13B807623E151E700819EE1 /* HarminderMobileDevTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B807523E151E700819EE1 /* HarminderMobileDevTestUITests.swift */; };
+		D13B808523E15EEC00819EE1 /* ComapanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B808323E15EEC00819EE1 /* ComapanyTableViewCell.swift */; };
+		D13B808623E15EEC00819EE1 /* ComapanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13B808423E15EEC00819EE1 /* ComapanyTableViewCell.xib */; };
+		D13B808823E1612B00819EE1 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B808723E1612B00819EE1 /* MemberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D13B807123E151E700819EE1 /* HarminderMobileDevTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarminderMobileDevTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13B807523E151E700819EE1 /* HarminderMobileDevTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarminderMobileDevTestUITests.swift; sourceTree = "<group>"; };
 		D13B807723E151E700819EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13B808323E15EEC00819EE1 /* ComapanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComapanyTableViewCell.swift; sourceTree = "<group>"; };
+		D13B808423E15EEC00819EE1 /* ComapanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComapanyTableViewCell.xib; sourceTree = "<group>"; };
+		D13B808723E1612B00819EE1 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,10 @@
 				D13B805023E151E400819EE1 /* AppDelegate.swift */,
 				D13B805223E151E400819EE1 /* SceneDelegate.swift */,
 				D13B805423E151E400819EE1 /* ViewController.swift */,
+				D13B808723E1612B00819EE1 /* MemberViewController.swift */,
 				D13B805623E151E400819EE1 /* Main.storyboard */,
+				D13B808323E15EEC00819EE1 /* ComapanyTableViewCell.swift */,
+				D13B808423E15EEC00819EE1 /* ComapanyTableViewCell.xib */,
 				D13B805C23E151E600819EE1 /* Assets.xcassets */,
 				D13B805E23E151E600819EE1 /* LaunchScreen.storyboard */,
 				D13B806123E151E600819EE1 /* Info.plist */,
@@ -236,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13B806023E151E600819EE1 /* LaunchScreen.storyboard in Resources */,
+				D13B808623E15EEC00819EE1 /* ComapanyTableViewCell.xib in Resources */,
 				D13B805D23E151E600819EE1 /* Assets.xcassets in Resources */,
 				D13B805823E151E400819EE1 /* Main.storyboard in Resources */,
 			);
@@ -262,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13B808823E1612B00819EE1 /* MemberViewController.swift in Sources */,
 				D13B805B23E151E400819EE1 /* HarminderMobileDevTest.xcdatamodeld in Sources */,
+				D13B808523E15EEC00819EE1 /* ComapanyTableViewCell.swift in Sources */,
 				D13B805523E151E400819EE1 /* ViewController.swift in Sources */,
 				D13B805123E151E400819EE1 /* AppDelegate.swift in Sources */,
 				D13B805323E151E400819EE1 /* SceneDelegate.swift in Sources */,
@@ -448,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = harminderPersonal.HarminderMobileDevTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = harminderPersonal.HarminderMobileDevTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
