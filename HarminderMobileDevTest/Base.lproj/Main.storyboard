@@ -15,22 +15,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-az-gax">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="147" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-az-gax">
+                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="536-2f-Ada"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="yad-7A-UlH"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vzd-D9-qm2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="J98-de-TNd"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7lf-h3-w9u"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meZ-tI-kUD">
+                                <rect key="frame" x="319" y="763" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="CPB-Dg-bNy"/>
+                                    <constraint firstAttribute="width" constant="75" id="gXt-gY-QY2"/>
+                                </constraints>
+                                <state key="normal" image="A-Z"/>
+                                <connections>
+                                    <action selector="SortButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjS-0o-rNL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y8h-az-gax" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fj9-Ua-h6a"/>
+                            <constraint firstItem="Y8h-az-gax" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HGA-eS-Ghw"/>
+                            <constraint firstItem="Y8h-az-gax" firstAttribute="top" secondItem="Vzd-D9-qm2" secondAttribute="bottom" id="Ha6-Er-cfK"/>
+                            <constraint firstItem="Y8h-az-gax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JKh-hs-ySl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="meZ-tI-kUD" secondAttribute="bottom" constant="24" id="Jeu-sh-RL8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="meZ-tI-kUD" secondAttribute="trailing" constant="20" id="N47-Ct-sgO"/>
+                            <constraint firstItem="Vzd-D9-qm2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QlQ-NM-g2F"/>
+                            <constraint firstItem="Vzd-D9-qm2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="erO-gK-A2c"/>
+                            <constraint firstItem="Vzd-D9-qm2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="niF-0e-BYa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Companies" id="VOr-1D-pzB"/>
                     <connections>
-                        <segue destination="Uo3-V3-AzK" kind="show" id="MVP-8E-NzP"/>
+                        <outlet property="CompanyTableView" destination="Y8h-az-gax" id="tPs-V9-lHa"/>
+                        <outlet property="SearchBar" destination="Vzd-D9-qm2" id="uId-13-s2F"/>
+                        <outlet property="SortButton" destination="meZ-tI-kUD" id="71k-cZ-BkG"/>
+                        <segue destination="Uo3-V3-AzK" kind="show" identifier="MemberSegue" id="MVP-8E-NzP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,14 +74,76 @@
         <!--Members-->
         <scene sceneID="dlJ-Gk-WCU">
             <objects>
-                <viewController id="Uo3-V3-AzK" sceneMemberID="viewController">
+                <viewController id="Uo3-V3-AzK" customClass="MemberViewController" customModule="HarminderMobileDevTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cI6-hC-ag7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="147" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-rn-yRA">
+                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Uo3-V3-AzK" id="mMX-Do-PNQ"/>
+                                    <outlet property="delegate" destination="Uo3-V3-AzK" id="WzR-yk-kUH"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dl0-QZ-u11">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2po-Sn-Kwi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="cIq-lN-8Br"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Uo3-V3-AzK" id="pky-YW-fNp"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI4-a7-3KL">
+                                <rect key="frame" x="319" y="763" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Nzz-lY-X6C"/>
+                                    <constraint firstAttribute="width" constant="75" id="teB-VT-twv"/>
+                                </constraints>
+                                <state key="normal" image="A-Z"/>
+                                <connections>
+                                    <action selector="SortButton:" destination="Uo3-V3-AzK" eventType="touchUpInside" id="04U-Rk-JKo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHl-fO-jg7">
+                                <rect key="frame" x="320" y="680" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="C34-kG-eNF"/>
+                                    <constraint firstAttribute="height" constant="75" id="UtD-x7-llm"/>
+                                </constraints>
+                                <state key="normal" image="1-2"/>
+                                <connections>
+                                    <action selector="Age_Sort:" destination="Uo3-V3-AzK" eventType="touchUpInside" id="HkJ-pl-v7u"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xZY-2K-NwZ" firstAttribute="trailing" secondItem="UI4-a7-3KL" secondAttribute="trailing" constant="20" id="2qi-Az-AgO"/>
+                            <constraint firstItem="dl0-QZ-u11" firstAttribute="trailing" secondItem="xZY-2K-NwZ" secondAttribute="trailing" id="8fE-rH-TsF"/>
+                            <constraint firstItem="ZPu-rn-yRA" firstAttribute="leading" secondItem="xZY-2K-NwZ" secondAttribute="leading" id="FGG-I7-Qvf"/>
+                            <constraint firstItem="dl0-QZ-u11" firstAttribute="leading" secondItem="xZY-2K-NwZ" secondAttribute="leading" id="FpX-JF-bps"/>
+                            <constraint firstItem="ZPu-rn-yRA" firstAttribute="bottom" secondItem="xZY-2K-NwZ" secondAttribute="bottom" id="JrG-m2-ogw"/>
+                            <constraint firstItem="ZPu-rn-yRA" firstAttribute="top" secondItem="dl0-QZ-u11" secondAttribute="bottom" id="Oe1-f5-4u4"/>
+                            <constraint firstItem="xZY-2K-NwZ" firstAttribute="trailing" secondItem="vHl-fO-jg7" secondAttribute="trailing" constant="19" id="USV-Zi-u6k"/>
+                            <constraint firstItem="ZPu-rn-yRA" firstAttribute="trailing" secondItem="xZY-2K-NwZ" secondAttribute="trailing" id="j40-rB-mjq"/>
+                            <constraint firstItem="xZY-2K-NwZ" firstAttribute="bottom" secondItem="UI4-a7-3KL" secondAttribute="bottom" constant="24" id="mNA-EI-7MV"/>
+                            <constraint firstItem="dl0-QZ-u11" firstAttribute="top" secondItem="xZY-2K-NwZ" secondAttribute="top" id="rFf-wj-phl"/>
+                            <constraint firstItem="UI4-a7-3KL" firstAttribute="top" secondItem="vHl-fO-jg7" secondAttribute="bottom" constant="8" id="z9C-ic-wMv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xZY-2K-NwZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Members" id="LuU-4b-UKb"/>
+                    <connections>
+                        <outlet property="Age_Sort" destination="vHl-fO-jg7" id="C9a-Ws-a6K"/>
+                        <outlet property="MemberTableView" destination="ZPu-rn-yRA" id="Qn4-ZD-3p6"/>
+                        <outlet property="SearchBar" destination="dl0-QZ-u11" id="NsR-H2-vhD"/>
+                        <outlet property="btn_Sort" destination="UI4-a7-3KL" id="dtN-eV-DTM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPw-bz-dSN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,4 +168,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1-2" width="48" height="48"/>
+        <image name="A-Z" width="48" height="48"/>
+    </resources>
 </document>

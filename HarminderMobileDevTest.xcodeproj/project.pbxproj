@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABFB8E8F2F36289B66A8DBFE /* Pods_HarminderMobileDevTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E009710DFF912AE8449497 /* Pods_HarminderMobileDevTestTests.framework */; };
+		C742F82FB86E626AB7D353A0 /* Pods_HarminderMobileDevTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97556940B31AD3BBD91DC626 /* Pods_HarminderMobileDevTest.framework */; };
 		D13B805123E151E400819EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B805023E151E400819EE1 /* AppDelegate.swift */; };
 		D13B805323E151E400819EE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B805223E151E400819EE1 /* SceneDelegate.swift */; };
 		D13B805523E151E400819EE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B805423E151E400819EE1 /* ViewController.swift */; };
@@ -19,6 +21,10 @@
 		D13B808523E15EEC00819EE1 /* ComapanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B808323E15EEC00819EE1 /* ComapanyTableViewCell.swift */; };
 		D13B808623E15EEC00819EE1 /* ComapanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13B808423E15EEC00819EE1 /* ComapanyTableViewCell.xib */; };
 		D13B808823E1612B00819EE1 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B808723E1612B00819EE1 /* MemberViewController.swift */; };
+		D1E1B29E23E1C02E00589D31 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E1B29C23E1C02E00589D31 /* MemberTableViewCell.swift */; };
+		D1E1B29F23E1C02E00589D31 /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1E1B29D23E1C02E00589D31 /* MemberTableViewCell.xib */; };
+		D1F041AF23E1FE78007F41A6 /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = D1F041AE23E1FE78007F41A6 /* document.json */; };
+		E1FE5175DB8B865ADF21E365 /* Pods_HarminderMobileDevTest_HarminderMobileDevTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610F2753EA27A8E7D5C957F2 /* Pods_HarminderMobileDevTest_HarminderMobileDevTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06F5B5B9D62485A072C74B8B /* Pods-HarminderMobileDevTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarminderMobileDevTest.release.xcconfig"; path = "Target Support Files/Pods-HarminderMobileDevTest/Pods-HarminderMobileDevTest.release.xcconfig"; sourceTree = "<group>"; };
+		109EAD471A0F8D45BF187CF8 /* Pods-HarminderMobileDevTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarminderMobileDevTest.debug.xcconfig"; path = "Target Support Files/Pods-HarminderMobileDevTest/Pods-HarminderMobileDevTest.debug.xcconfig"; sourceTree = "<group>"; };
+		1AA3ECF07A116B9295B4E249 /* Pods-HarminderMobileDevTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarminderMobileDevTestTests.debug.xcconfig"; path = "Target Support Files/Pods-HarminderMobileDevTestTests/Pods-HarminderMobileDevTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43E009710DFF912AE8449497 /* Pods_HarminderMobileDevTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarminderMobileDevTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		610F2753EA27A8E7D5C957F2 /* Pods_HarminderMobileDevTest_HarminderMobileDevTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarminderMobileDevTest_HarminderMobileDevTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CA7F1A35746E02D3B87712 /* Pods-HarminderMobileDevTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarminderMobileDevTestTests.release.xcconfig"; path = "Target Support Files/Pods-HarminderMobileDevTestTests/Pods-HarminderMobileDevTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F1563B9A51C474546176788 /* Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.release.xcconfig"; path = "Target Support Files/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97556940B31AD3BBD91DC626 /* Pods_HarminderMobileDevTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarminderMobileDevTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13B804D23E151E400819EE1 /* HarminderMobileDevTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarminderMobileDevTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13B805023E151E400819EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D13B805223E151E400819EE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +71,10 @@
 		D13B808323E15EEC00819EE1 /* ComapanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComapanyTableViewCell.swift; sourceTree = "<group>"; };
 		D13B808423E15EEC00819EE1 /* ComapanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComapanyTableViewCell.xib; sourceTree = "<group>"; };
 		D13B808723E1612B00819EE1 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		D1E1B29C23E1C02E00589D31 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		D1E1B29D23E1C02E00589D31 /* MemberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
+		D1F041AE23E1FE78007F41A6 /* document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = document.json; sourceTree = "<group>"; };
+		E68810AE5A2ACF187BFFDE3C /* Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C742F82FB86E626AB7D353A0 /* Pods_HarminderMobileDevTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFB8E8F2F36289B66A8DBFE /* Pods_HarminderMobileDevTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +98,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FE5175DB8B865ADF21E365 /* Pods_HarminderMobileDevTest_HarminderMobileDevTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33EE9BF460A21CA5B2476B1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				109EAD471A0F8D45BF187CF8 /* Pods-HarminderMobileDevTest.debug.xcconfig */,
+				06F5B5B9D62485A072C74B8B /* Pods-HarminderMobileDevTest.release.xcconfig */,
+				E68810AE5A2ACF187BFFDE3C /* Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.debug.xcconfig */,
+				7F1563B9A51C474546176788 /* Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.release.xcconfig */,
+				1AA3ECF07A116B9295B4E249 /* Pods-HarminderMobileDevTestTests.debug.xcconfig */,
+				70CA7F1A35746E02D3B87712 /* Pods-HarminderMobileDevTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D13B804423E151E400819EE1 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +125,8 @@
 				D13B806923E151E700819EE1 /* HarminderMobileDevTestTests */,
 				D13B807423E151E700819EE1 /* HarminderMobileDevTestUITests */,
 				D13B804E23E151E400819EE1 /* Products */,
+				33EE9BF460A21CA5B2476B1F /* Pods */,
+				FE47861EF00676B8C583A7A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,13 +143,16 @@
 		D13B804F23E151E400819EE1 /* HarminderMobileDevTest */ = {
 			isa = PBXGroup;
 			children = (
+				D1F041AE23E1FE78007F41A6 /* document.json */,
 				D13B805023E151E400819EE1 /* AppDelegate.swift */,
 				D13B805223E151E400819EE1 /* SceneDelegate.swift */,
 				D13B805423E151E400819EE1 /* ViewController.swift */,
 				D13B808723E1612B00819EE1 /* MemberViewController.swift */,
-				D13B805623E151E400819EE1 /* Main.storyboard */,
 				D13B808323E15EEC00819EE1 /* ComapanyTableViewCell.swift */,
 				D13B808423E15EEC00819EE1 /* ComapanyTableViewCell.xib */,
+				D1E1B29C23E1C02E00589D31 /* MemberTableViewCell.swift */,
+				D1E1B29D23E1C02E00589D31 /* MemberTableViewCell.xib */,
+				D13B805623E151E400819EE1 /* Main.storyboard */,
 				D13B805C23E151E600819EE1 /* Assets.xcassets */,
 				D13B805E23E151E600819EE1 /* LaunchScreen.storyboard */,
 				D13B806123E151E600819EE1 /* Info.plist */,
@@ -140,6 +179,16 @@
 			path = HarminderMobileDevTestUITests;
 			sourceTree = "<group>";
 		};
+		FE47861EF00676B8C583A7A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97556940B31AD3BBD91DC626 /* Pods_HarminderMobileDevTest.framework */,
+				610F2753EA27A8E7D5C957F2 /* Pods_HarminderMobileDevTest_HarminderMobileDevTestUITests.framework */,
+				43E009710DFF912AE8449497 /* Pods_HarminderMobileDevTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D13B807A23E151E700819EE1 /* Build configuration list for PBXNativeTarget "HarminderMobileDevTest" */;
 			buildPhases = (
+				EBDB0F35AF8E4C4227ABD439 /* [CP] Check Pods Manifest.lock */,
 				D13B804923E151E400819EE1 /* Sources */,
 				D13B804A23E151E400819EE1 /* Frameworks */,
 				D13B804B23E151E400819EE1 /* Resources */,
+				903729113F965550251662A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D13B807D23E151E700819EE1 /* Build configuration list for PBXNativeTarget "HarminderMobileDevTestTests" */;
 			buildPhases = (
+				853C1807ECC6A589DE130DE1 /* [CP] Check Pods Manifest.lock */,
 				D13B806223E151E700819EE1 /* Sources */,
 				D13B806323E151E700819EE1 /* Frameworks */,
 				D13B806423E151E700819EE1 /* Resources */,
@@ -182,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D13B808023E151E700819EE1 /* Build configuration list for PBXNativeTarget "HarminderMobileDevTestUITests" */;
 			buildPhases = (
+				8D7DEFC74DEFBDCFEAD29CCD /* [CP] Check Pods Manifest.lock */,
 				D13B806D23E151E700819EE1 /* Sources */,
 				D13B806E23E151E700819EE1 /* Frameworks */,
 				D13B806F23E151E700819EE1 /* Resources */,
+				67DC60B754AD89833C2481A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13B806023E151E600819EE1 /* LaunchScreen.storyboard in Resources */,
+				D1E1B29F23E1C02E00589D31 /* MemberTableViewCell.xib in Resources */,
+				D1F041AF23E1FE78007F41A6 /* document.json in Resources */,
 				D13B808623E15EEC00819EE1 /* ComapanyTableViewCell.xib in Resources */,
 				D13B805D23E151E600819EE1 /* Assets.xcassets in Resources */,
 				D13B805823E151E400819EE1 /* Main.storyboard in Resources */,
@@ -267,6 +323,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67DC60B754AD89833C2481A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853C1807ECC6A589DE130DE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarminderMobileDevTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D7DEFC74DEFBDCFEAD29CCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		903729113F965550251662A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HarminderMobileDevTest/Pods-HarminderMobileDevTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HarminderMobileDevTest/Pods-HarminderMobileDevTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HarminderMobileDevTest/Pods-HarminderMobileDevTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBDB0F35AF8E4C4227ABD439 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarminderMobileDevTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D13B804923E151E400819EE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +434,7 @@
 				D13B808823E1612B00819EE1 /* MemberViewController.swift in Sources */,
 				D13B805B23E151E400819EE1 /* HarminderMobileDevTest.xcdatamodeld in Sources */,
 				D13B808523E15EEC00819EE1 /* ComapanyTableViewCell.swift in Sources */,
+				D1E1B29E23E1C02E00589D31 /* MemberTableViewCell.swift in Sources */,
 				D13B805523E151E400819EE1 /* ViewController.swift in Sources */,
 				D13B805123E151E400819EE1 /* AppDelegate.swift in Sources */,
 				D13B805323E151E400819EE1 /* SceneDelegate.swift in Sources */,
@@ -448,6 +608,7 @@
 		};
 		D13B807B23E151E700819EE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 109EAD471A0F8D45BF187CF8 /* Pods-HarminderMobileDevTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +627,7 @@
 		};
 		D13B807C23E151E700819EE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F5B5B9D62485A072C74B8B /* Pods-HarminderMobileDevTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +646,7 @@
 		};
 		D13B807E23E151E700819EE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA3ECF07A116B9295B4E249 /* Pods-HarminderMobileDevTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +669,7 @@
 		};
 		D13B807F23E151E700819EE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70CA7F1A35746E02D3B87712 /* Pods-HarminderMobileDevTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +692,7 @@
 		};
 		D13B808123E151E700819EE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68810AE5A2ACF187BFFDE3C /* Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +713,7 @@
 		};
 		D13B808223E151E700819EE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1563B9A51C474546176788 /* Pods-HarminderMobileDevTest-HarminderMobileDevTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
