@@ -1,5 +1,5 @@
 //
-//  ComapanyTableViewCell.swift
+//  MemberTableViewCell.swift
 //  HarminderMobileDevTest
 //
 //  Created by Singh, Harminder (external - Project) on 29/01/20.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class ComapanyTableViewCell: UITableViewCell {
+class MemberTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var CompanyImage: UIImageView!
-    @IBOutlet weak var CompanyName: UILabel!
-    @IBOutlet weak var CompanyWebsite: UILabel!
-    @IBOutlet weak var CompanyDescription: UILabel!
-    @IBOutlet weak var btn_Favourite: UIButton!
-    @IBOutlet weak var btn_Follow: UIButton!
+    @IBOutlet weak var MemberName: UILabel!
+    @IBOutlet weak var MemberAge: UILabel!
+    @IBOutlet weak var MemberPhone: UILabel!
+    @IBOutlet weak var MemberEmail: UILabel!
+    @IBOutlet weak var MemberFavourite: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
