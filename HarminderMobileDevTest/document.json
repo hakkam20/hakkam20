@@ -1,0 +1,163 @@
+{
+  "Companies": [
+    {
+      "Follow": "0",
+      "Favourite": "0",
+      "logo": "https://homepages.cae.wisc.edu/~ece533/images/sails.png",
+      "website": "http://www.sasacademy.com",
+      "MembersArray": [
+        {
+          "Name": "Kushal",
+          "Favourite": "0",
+          "MemberID": "1",
+          "Age": "20",
+          "Phone": "9735473829",
+          "email": "Kushal20@gmail.com"
+        },
+        {
+          "Name": "Harminder",
+          "Favourite": "0",
+          "MemberID": "2",
+          "Age": "22",
+          "Phone": "8762538490",
+          "email": "rednimrah20@gmail.com"
+        }
+      ],
+      "Description": "Sample Description 2",
+      "CompanyID": "1",
+      "CompanyName": "ZAcademy2"
+    },
+    {
+      "logo": "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
+      "Follow": "0",
+      "Favourite": "0",
+      "website": "https://www.spectrum.global",
+      "MembersArray": [
+        {
+          "Name": "Varun",
+          "Favourite": "0",
+          "MemberID": "1",
+          "Age": "55",
+          "Phone": "6374983474",
+          "email": "Kushal20@gmail.com"
+        },
+        {
+          "Name": "Puneet",
+          "Favourite": "0",
+          "MemberID": "2",
+          "Age": "21",
+          "Phone": "7635426738",
+          "email": "puneet@gmail.com"
+        },
+        {
+          "Name": "Sachin",
+          "Favourite": "0",
+          "MemberID": "3",
+          "Age": "60",
+          "Phone": "62736455798",
+          "email": "rednimrah20@gmail.com"
+        }
+      ],
+      "CompanyID": "2",
+      "Description": "Sample Description",
+      "CompanyName": "ASpectrum1"
+    },
+    {
+      "logo": "https://homepages.cae.wisc.edu/~ece533/images/sails.png",
+      "Follow": "0",
+      "Favourite": "0",
+      "website": "http://www.sasacademy.com",
+      "MembersArray": [
+        {
+          "Name": "Ron",
+          "Favourite": "0",
+          "MemberID": "1",
+          "Age": "23",
+          "Phone": "89274523729",
+          "email": "Kushal20@gmail.com"
+        },
+        {
+          "Name": "David",
+          "Favourite": "0",
+          "MemberID": "2",
+          "Age": "24",
+          "Phone": "7346473289394",
+          "email": "rednimrah20@gmail.com"
+        }
+      ],
+      "Description": "Sample Description 2",
+      "CompanyName": "BSpectrum2",
+      "CompanyID": "3"
+    },
+    {
+      "CompanyName": "CSpectrum3",
+      "logo": "https://homepages.cae.wisc.edu/~ece533/images/boat.png",
+      "Follow": "0",
+      "Favourite": "0",
+      "website": "https://proedge.co",
+      "MembersArray": [
+        {
+          "Name": "Rahul",
+          "Favourite": "0",
+          "MemberID": "1",
+          "Age": "19",
+          "Phone": "83746563823",
+          "email": "Kushal20@gmail.com"
+        },
+        {
+          "Name": "Steve",
+          "Favourite": "0",
+          "MemberID": "2",
+          "Age": "28",
+          "Phone": "734848949383",
+          "email": "rednimrah20@gmail.com"
+        }
+      ],
+      "Description": "Sample Description 3",
+      "CompanyID": "4"
+    },
+    {
+      "CompanyName": "AASASAcademy2",
+      "logo": "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
+      "Follow": "0",
+      "Favourite": "0",
+      "website": "http://www.sasacademy.com",
+      "MembersArray": [
+        {
+          "Name": "Raj",
+          "Favourite": "0",
+          "MemberID": "1",
+          "Age": "27",
+          "Phone": "63748590383",
+          "email": "Kushal20@gmail.com"
+        },
+        {
+          "Name": "Puneet",
+          "Favourite": "0",
+          "MemberID": "2",
+          "Age": "21",
+          "Phone": "7635426738",
+          "email": "puneet@gmail.com"
+        },
+        {
+          "Name": "Sachin",
+          "Favourite": "0",
+          "MemberID": "3",
+          "Age": "60",
+          "Phone": "62736455798",
+          "email": "rednimrah20@gmail.com"
+        },
+        {
+          "Name": "Sheldon",
+          "Favourite": "0",
+          "MemberID": "4",
+          "Age": "24",
+          "Phone": "7453637283",
+          "email": "rednimrah20@gmail.com"
+        }
+      ],
+      "Description": "Sample Description 2",
+      "CompanyID": "5"
+    }
+  ]
+}
